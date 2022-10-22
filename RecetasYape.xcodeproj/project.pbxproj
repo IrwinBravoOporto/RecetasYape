@@ -9,21 +9,41 @@
 /* Begin PBXBuildFile section */
 		FD796AB82904982000AD9059 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796AB72904982000AD9059 /* AppDelegate.swift */; };
 		FD796ABA2904982000AD9059 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796AB92904982000AD9059 /* SceneDelegate.swift */; };
-		FD796ABC2904982000AD9059 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796ABB2904982000AD9059 /* ViewController.swift */; };
 		FD796ABF2904982000AD9059 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD796ABD2904982000AD9059 /* Main.storyboard */; };
 		FD796AC12904982100AD9059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD796AC02904982100AD9059 /* Assets.xcassets */; };
 		FD796AC42904982100AD9059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD796AC22904982100AD9059 /* LaunchScreen.storyboard */; };
+		FD796ACC2904985100AD9059 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796ACB2904985100AD9059 /* RecipeModel.swift */; };
+		FD796AD02904B28A00AD9059 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796ACF2904B28A00AD9059 /* HomeViewController.swift */; };
+		FD796AD42904B2AD00AD9059 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796AD32904B2AD00AD9059 /* SearchViewController.swift */; };
+		FD796AD72904B31100AD9059 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD796AD62904B31100AD9059 /* Search.storyboard */; };
+		FD796AD92904B49A00AD9059 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD796AD82904B49A00AD9059 /* Home.storyboard */; };
+		FD796ADD2904B54C00AD9059 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796ADC2904B54C00AD9059 /* TabBarViewController.swift */; };
+		FD796AE02904B57500AD9059 /* BaseCardTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796ADF2904B57500AD9059 /* BaseCardTabBar.swift */; };
+		FD796AE22904B58500AD9059 /* LightTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796AE12904B58500AD9059 /* LightTabBarController.swift */; };
+		FD796AE42904B59400AD9059 /* LightTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796AE32904B59400AD9059 /* LightTabBar.swift */; };
+		FD796AE72904B5CE00AD9059 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796AE62904B5CE00AD9059 /* UIView+Additions.swift */; };
+		FD796AE92904B61400AD9059 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796AE82904B61400AD9059 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FD796AB42904982000AD9059 /* RecetasYape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecetasYape.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD796AB72904982000AD9059 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD796AB92904982000AD9059 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FD796ABB2904982000AD9059 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD796ABE2904982000AD9059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD796AC02904982100AD9059 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD796AC32904982100AD9059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD796AC52904982100AD9059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD796ACB2904985100AD9059 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		FD796ACF2904B28A00AD9059 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FD796AD32904B2AD00AD9059 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		FD796AD62904B31100AD9059 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		FD796AD82904B49A00AD9059 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		FD796ADC2904B54C00AD9059 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		FD796ADF2904B57500AD9059 /* BaseCardTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCardTabBar.swift; sourceTree = "<group>"; };
+		FD796AE12904B58500AD9059 /* LightTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTabBarController.swift; sourceTree = "<group>"; };
+		FD796AE32904B59400AD9059 /* LightTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTabBar.swift; sourceTree = "<group>"; };
+		FD796AE62904B5CE00AD9059 /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
+		FD796AE82904B61400AD9059 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +76,97 @@
 		FD796AB62904982000AD9059 /* RecetasYape */ = {
 			isa = PBXGroup;
 			children = (
+				FD796AE52904B5C200AD9059 /* UIComponents */,
+				FD796ADA2904B50B00AD9059 /* Resources */,
+				FD796ACE2904B27700AD9059 /* Module */,
 				FD796AB72904982000AD9059 /* AppDelegate.swift */,
 				FD796AB92904982000AD9059 /* SceneDelegate.swift */,
-				FD796ABB2904982000AD9059 /* ViewController.swift */,
-				FD796ABD2904982000AD9059 /* Main.storyboard */,
+				FD796AD52904B30500AD9059 /* Views */,
 				FD796AC02904982100AD9059 /* Assets.xcassets */,
 				FD796AC22904982100AD9059 /* LaunchScreen.storyboard */,
 				FD796AC52904982100AD9059 /* Info.plist */,
 			);
 			path = RecetasYape;
+			sourceTree = "<group>";
+		};
+		FD796ACD2904985700AD9059 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD796ACB2904985100AD9059 /* RecipeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD796ACE2904B27700AD9059 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				FD796ACD2904985700AD9059 /* Model */,
+				FD796ADB2904B51B00AD9059 /* Presentation */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		FD796AD12904B29C00AD9059 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FD796ACF2904B28A00AD9059 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FD796AD22904B2A100AD9059 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				FD796AD32904B2AD00AD9059 /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		FD796AD52904B30500AD9059 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD796ABD2904982000AD9059 /* Main.storyboard */,
+				FD796AD62904B31100AD9059 /* Search.storyboard */,
+				FD796AD82904B49A00AD9059 /* Home.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FD796ADA2904B50B00AD9059 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FD796ADC2904B54C00AD9059 /* TabBarViewController.swift */,
+				FD796ADE2904B56400AD9059 /* CustomBar */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FD796ADB2904B51B00AD9059 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FD796AD22904B2A100AD9059 /* Search */,
+				FD796AD12904B29C00AD9059 /* Home */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FD796ADE2904B56400AD9059 /* CustomBar */ = {
+			isa = PBXGroup;
+			children = (
+				FD796ADF2904B57500AD9059 /* BaseCardTabBar.swift */,
+				FD796AE12904B58500AD9059 /* LightTabBarController.swift */,
+				FD796AE32904B59400AD9059 /* LightTabBar.swift */,
+			);
+			path = CustomBar;
+			sourceTree = "<group>";
+		};
+		FD796AE52904B5C200AD9059 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				FD796AE62904B5CE00AD9059 /* UIView+Additions.swift */,
+				FD796AE82904B61400AD9059 /* UIColor.swift */,
+			);
+			path = UIComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +228,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD796AC42904982100AD9059 /* LaunchScreen.storyboard in Resources */,
+				FD796AD92904B49A00AD9059 /* Home.storyboard in Resources */,
 				FD796AC12904982100AD9059 /* Assets.xcassets in Resources */,
+				FD796AD72904B31100AD9059 /* Search.storyboard in Resources */,
 				FD796ABF2904982000AD9059 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +242,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD796ABC2904982000AD9059 /* ViewController.swift in Sources */,
+				FD796AE72904B5CE00AD9059 /* UIView+Additions.swift in Sources */,
+				FD796AE92904B61400AD9059 /* UIColor.swift in Sources */,
+				FD796AD42904B2AD00AD9059 /* SearchViewController.swift in Sources */,
 				FD796AB82904982000AD9059 /* AppDelegate.swift in Sources */,
 				FD796ABA2904982000AD9059 /* SceneDelegate.swift in Sources */,
+				FD796ACC2904985100AD9059 /* RecipeModel.swift in Sources */,
+				FD796AE02904B57500AD9059 /* BaseCardTabBar.swift in Sources */,
+				FD796AE42904B59400AD9059 /* LightTabBar.swift in Sources */,
+				FD796ADD2904B54C00AD9059 /* TabBarViewController.swift in Sources */,
+				FD796AE22904B58500AD9059 /* LightTabBarController.swift in Sources */,
+				FD796AD02904B28A00AD9059 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
