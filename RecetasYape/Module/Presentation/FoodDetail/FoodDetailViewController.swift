@@ -23,16 +23,11 @@ class FoodDetailViewController: UIViewController {
     
     @IBOutlet weak var imgCountries: UIImageView! {
         didSet {
-            let url: String = "https://countryflagsapi.com/png/"
-
-            let flag = foodDetail.flag
+            guard let url = URL(string: FlagPortrait(flag: foodDetail.flag).resultUrl) else { return }
             
-            guard let url = URL(string: "\(url)\(flag!)") else { return }
             let loader =  Loader()
-            
             imgCountries.addSubview(loader)
             loader.setup(in: imgCountries)
-            
             ImageCache.load(url: url) { image in
                 DispatchQueue.main.async {
                     self.imgCountries.image = image

@@ -8,6 +8,9 @@
 import UIKit
 
 struct FlagPortrait {
+    let url: String = "https://countryflagsapi.com/png/"
     var flag: String? = ""
-    var size: CGSize? = nil
+    var resultUrl: String {
+        return "\(url)\(flag!)"
+    }
 }
