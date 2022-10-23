@@ -26,6 +26,12 @@
 		FD796AEC2904BF5C00AD9059 /* RecetasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796AEB2904BF5C00AD9059 /* RecetasCollectionViewCell.swift */; };
 		FD796AEE2904DAD400AD9059 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796AED2904DAD400AD9059 /* CardView.swift */; };
 		FD796AF02905A43F00AD9059 /* RecetasCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD796AEF2905A43F00AD9059 /* RecetasCollectionViewCell.xib */; };
+		FD796AF82905AFD600AD9059 /* HomeVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796AF72905AFD600AD9059 /* HomeVCRouter.swift */; };
+		FD796AFA2905AFE600AD9059 /* HomeVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796AF92905AFE600AD9059 /* HomeVCPresenter.swift */; };
+		FD796AFC2905AFF500AD9059 /* HomeVCConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796AFB2905AFF500AD9059 /* HomeVCConfigurator.swift */; };
+		FD796AFE2905B30400AD9059 /* FoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796AFD2905B30400AD9059 /* FoodDetailViewController.swift */; };
+		FD796B012905B32A00AD9059 /* Food.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD796B002905B32A00AD9059 /* Food.storyboard */; };
+		FD796B042905BE8500AD9059 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796B032905BE8500AD9059 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +56,12 @@
 		FD796AEB2904BF5C00AD9059 /* RecetasCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetasCollectionViewCell.swift; sourceTree = "<group>"; };
 		FD796AED2904DAD400AD9059 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FD796AEF2905A43F00AD9059 /* RecetasCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecetasCollectionViewCell.xib; sourceTree = "<group>"; };
+		FD796AF72905AFD600AD9059 /* HomeVCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCRouter.swift; sourceTree = "<group>"; };
+		FD796AF92905AFE600AD9059 /* HomeVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCPresenter.swift; sourceTree = "<group>"; };
+		FD796AFB2905AFF500AD9059 /* HomeVCConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCConfigurator.swift; sourceTree = "<group>"; };
+		FD796AFD2905B30400AD9059 /* FoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailViewController.swift; sourceTree = "<group>"; };
+		FD796B002905B32A00AD9059 /* Food.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Food.storyboard; sourceTree = "<group>"; };
+		FD796B032905BE8500AD9059 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +94,7 @@
 		FD796AB62904982000AD9059 /* RecetasYape */ = {
 			isa = PBXGroup;
 			children = (
+				FD796B022905BE7400AD9059 /* Utils */,
 				FD796AE52904B5C200AD9059 /* UIComponents */,
 				FD796ADA2904B50B00AD9059 /* Resources */,
 				FD796ACE2904B27700AD9059 /* Module */,
@@ -115,8 +128,7 @@
 		FD796AD12904B29C00AD9059 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				FD796AEA2904BF4000AD9059 /* Cell */,
-				FD796ACF2904B28A00AD9059 /* HomeViewController.swift */,
+				FD796AF12905AF5B00AD9059 /* Home */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -135,6 +147,7 @@
 				FD796ABD2904982000AD9059 /* TabBar.storyboard */,
 				FD796AD62904B31100AD9059 /* Search.storyboard */,
 				FD796AD82904B49A00AD9059 /* Home.storyboard */,
+				FD796B002905B32A00AD9059 /* Food.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,6 +166,7 @@
 			children = (
 				FD796AD22904B2A100AD9059 /* Search */,
 				FD796AD12904B29C00AD9059 /* Home */,
+				FD796AFF2905B30B00AD9059 /* FoodDetail */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -184,6 +198,74 @@
 				FD796AEF2905A43F00AD9059 /* RecetasCollectionViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		FD796AF12905AF5B00AD9059 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FD796AF52905AF9500AD9059 /* Router */,
+				FD796AF42905AF8C00AD9059 /* Presenter */,
+				FD796AF32905AF7E00AD9059 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FD796AF22905AF6500AD9059 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FD796ACF2904B28A00AD9059 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FD796AF32905AF7E00AD9059 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD796AEA2904BF4000AD9059 /* Cell */,
+				FD796AF62905AF9B00AD9059 /* Configurator */,
+				FD796AF22905AF6500AD9059 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FD796AF42905AF8C00AD9059 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FD796AF92905AFE600AD9059 /* HomeVCPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FD796AF52905AF9500AD9059 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FD796AF72905AFD600AD9059 /* HomeVCRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FD796AF62905AF9B00AD9059 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				FD796AFB2905AFF500AD9059 /* HomeVCConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		FD796AFF2905B30B00AD9059 /* FoodDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FD796AFD2905B30400AD9059 /* FoodDetailViewController.swift */,
+			);
+			path = FoodDetail;
+			sourceTree = "<group>";
+		};
+		FD796B022905BE7400AD9059 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FD796B032905BE8500AD9059 /* Constant.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD796AC42904982100AD9059 /* LaunchScreen.storyboard in Resources */,
+				FD796B012905B32A00AD9059 /* Food.storyboard in Resources */,
 				FD796AD92904B49A00AD9059 /* Home.storyboard in Resources */,
 				FD796AF02905A43F00AD9059 /* RecetasCollectionViewCell.xib in Resources */,
 				FD796AC12904982100AD9059 /* Assets.xcassets in Resources */,
@@ -264,9 +347,14 @@
 				FD796AE92904B61400AD9059 /* UIColor.swift in Sources */,
 				FD796AD42904B2AD00AD9059 /* SearchViewController.swift in Sources */,
 				FD796AB82904982000AD9059 /* AppDelegate.swift in Sources */,
+				FD796AFE2905B30400AD9059 /* FoodDetailViewController.swift in Sources */,
+				FD796AF82905AFD600AD9059 /* HomeVCRouter.swift in Sources */,
 				FD796AEC2904BF5C00AD9059 /* RecetasCollectionViewCell.swift in Sources */,
 				FD796ABA2904982000AD9059 /* SceneDelegate.swift in Sources */,
+				FD796AFA2905AFE600AD9059 /* HomeVCPresenter.swift in Sources */,
+				FD796AFC2905AFF500AD9059 /* HomeVCConfigurator.swift in Sources */,
 				FD796ACC2904985100AD9059 /* RecipeModel.swift in Sources */,
+				FD796B042905BE8500AD9059 /* Constant.swift in Sources */,
 				FD796AEE2904DAD400AD9059 /* CardView.swift in Sources */,
 				FD796AE02904B57500AD9059 /* BaseCardTabBar.swift in Sources */,
 				FD796AE42904B59400AD9059 /* LightTabBar.swift in Sources */,

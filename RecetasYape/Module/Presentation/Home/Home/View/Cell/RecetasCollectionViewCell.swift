@@ -9,29 +9,27 @@ import UIKit
 
 class RecetasCollectionViewCell: UICollectionViewCell {
     
-
-    @IBOutlet weak var imgFood: UIImageView!
+    @IBOutlet weak var imgFood: UIImageView! {
+        didSet {
+            imgFood.layer.cornerRadius = 20
+        }
+    }
     @IBOutlet weak var lblTitleFood: UILabel!
-    @IBOutlet weak var cardView: CardView!
-    
-    var cornerRadiusButton: CGFloat = 20
-
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-            cardView.cornerRadius = cornerRadiusButton
+    @IBOutlet weak var cardView: CardView!{
+        didSet {
+            cardView.cornerRadius = 20
             cardView.shadowColor = .gray
-            imgFood.layer.cornerRadius = cornerRadiusButton
-
+        }
     }
     
+
     override func prepareForReuse() {
         super.prepareForReuse()
         clearItemsUsers()
     }
     
     func setup(with food: Recipe) {
-        imgFood.image = UIImage(named: food.imagen)
+        imgFood.image = UIImage(named: food.imagen ?? String())
         lblTitleFood.text = food.name
     }
 }
