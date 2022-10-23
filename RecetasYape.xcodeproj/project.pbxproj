@@ -32,6 +32,9 @@
 		FD796AFE2905B30400AD9059 /* FoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796AFD2905B30400AD9059 /* FoodDetailViewController.swift */; };
 		FD796B012905B32A00AD9059 /* Food.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD796B002905B32A00AD9059 /* Food.storyboard */; };
 		FD796B042905BE8500AD9059 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796B032905BE8500AD9059 /* Constant.swift */; };
+		FD796B072905F16600AD9059 /* FlagPortraitComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796B062905F16600AD9059 /* FlagPortraitComponent.swift */; };
+		FD796B092905F3AB00AD9059 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796B082905F3AB00AD9059 /* Loader.swift */; };
+		FD796B0B2905F3DF00AD9059 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796B0A2905F3DF00AD9059 /* ImageCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,9 @@
 		FD796AFD2905B30400AD9059 /* FoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailViewController.swift; sourceTree = "<group>"; };
 		FD796B002905B32A00AD9059 /* Food.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Food.storyboard; sourceTree = "<group>"; };
 		FD796B032905BE8500AD9059 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		FD796B062905F16600AD9059 /* FlagPortraitComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagPortraitComponent.swift; sourceTree = "<group>"; };
+		FD796B082905F3AB00AD9059 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		FD796B0A2905F3DF00AD9059 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 		FD796AB62904982000AD9059 /* RecetasYape */ = {
 			isa = PBXGroup;
 			children = (
+				FD796B052905F15400AD9059 /* Component */,
 				FD796B022905BE7400AD9059 /* Utils */,
 				FD796AE52904B5C200AD9059 /* UIComponents */,
 				FD796ADA2904B50B00AD9059 /* Resources */,
@@ -268,6 +275,16 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		FD796B052905F15400AD9059 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				FD796B062905F16600AD9059 /* FlagPortraitComponent.swift */,
+				FD796B082905F3AB00AD9059 /* Loader.swift */,
+				FD796B0A2905F3DF00AD9059 /* ImageCache.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -351,11 +368,14 @@
 				FD796AF82905AFD600AD9059 /* HomeVCRouter.swift in Sources */,
 				FD796AEC2904BF5C00AD9059 /* RecetasCollectionViewCell.swift in Sources */,
 				FD796ABA2904982000AD9059 /* SceneDelegate.swift in Sources */,
+				FD796B072905F16600AD9059 /* FlagPortraitComponent.swift in Sources */,
 				FD796AFA2905AFE600AD9059 /* HomeVCPresenter.swift in Sources */,
 				FD796AFC2905AFF500AD9059 /* HomeVCConfigurator.swift in Sources */,
 				FD796ACC2904985100AD9059 /* RecipeModel.swift in Sources */,
+				FD796B0B2905F3DF00AD9059 /* ImageCache.swift in Sources */,
 				FD796B042905BE8500AD9059 /* Constant.swift in Sources */,
 				FD796AEE2904DAD400AD9059 /* CardView.swift in Sources */,
+				FD796B092905F3AB00AD9059 /* Loader.swift in Sources */,
 				FD796AE02904B57500AD9059 /* BaseCardTabBar.swift in Sources */,
 				FD796AE42904B59400AD9059 /* LightTabBar.swift in Sources */,
 				FD796ADD2904B54C00AD9059 /* TabBarViewController.swift in Sources */,
