@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="5yv-Mf-mP6" customClass="RecetasCollectionViewCell" customModule="RecetasYape" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="234"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OKP-u3-Gii">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="234"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8n2-ld-ONb" customClass="CardView" customModule="RecetasYape" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="185" height="220"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="220" id="OCE-JT-aFD"/>
+                            <constraint firstAttribute="width" constant="185" id="hSt-CL-lau"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puredepapas" translatesAutoresizingMaskIntoConstraints="NO" id="O16-Bm-g7K">
+                        <rect key="frame" x="5" y="5" width="185" height="220"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="185" id="bVQ-fK-pY8"/>
+                            <constraint firstAttribute="height" constant="220" id="bmt-lb-Bud"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pure de papas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tak-b0-K0y">
+                        <rect key="frame" x="15" y="193.5" width="123.5" height="21.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="O16-Bm-g7K" firstAttribute="leading" secondItem="OKP-u3-Gii" secondAttribute="leading" constant="5" id="29l-Wb-ZNy"/>
+                    <constraint firstAttribute="bottom" secondItem="O16-Bm-g7K" secondAttribute="bottom" constant="5" id="3Zp-w2-jxG"/>
+                    <constraint firstAttribute="trailing" secondItem="8n2-ld-ONb" secondAttribute="trailing" constant="5" id="5H4-vY-UpY"/>
+                    <constraint firstItem="8n2-ld-ONb" firstAttribute="leading" secondItem="OKP-u3-Gii" secondAttribute="leading" constant="5" id="6N3-3s-vm0"/>
+                    <constraint firstItem="O16-Bm-g7K" firstAttribute="top" secondItem="OKP-u3-Gii" secondAttribute="top" constant="5" id="PuF-gf-3O4"/>
+                    <constraint firstItem="tak-b0-K0y" firstAttribute="leading" secondItem="OKP-u3-Gii" secondAttribute="leading" constant="15" id="Wrx-kj-Yh3"/>
+                    <constraint firstAttribute="trailing" secondItem="O16-Bm-g7K" secondAttribute="trailing" constant="5" id="ipT-H7-Cfh"/>
+                    <constraint firstItem="8n2-ld-ONb" firstAttribute="top" secondItem="OKP-u3-Gii" secondAttribute="top" constant="5" id="mjF-YG-e7L"/>
+                    <constraint firstAttribute="bottom" secondItem="tak-b0-K0y" secondAttribute="bottom" constant="15" id="wxn-sw-h1I"/>
+                    <constraint firstAttribute="bottom" secondItem="8n2-ld-ONb" secondAttribute="bottom" constant="5" id="zJf-ef-WlK"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="190" height="250"/>
+            <connections>
+                <outlet property="cardView" destination="8n2-ld-ONb" id="j8M-gI-NcM"/>
+                <outlet property="imgFood" destination="O16-Bm-g7K" id="7Es-ds-f6y"/>
+                <outlet property="lblTitleFood" destination="tak-b0-K0y" id="Vgv-NB-2ki"/>
+            </connections>
+            <point key="canvasLocation" x="-311.59420289855075" y="242.41071428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="puredepapas" width="4480" height="6720"/>
+    </resources>
+</document>

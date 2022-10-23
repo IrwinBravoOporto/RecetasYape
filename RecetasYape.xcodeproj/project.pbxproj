@@ -25,6 +25,7 @@
 		FD796AE92904B61400AD9059 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796AE82904B61400AD9059 /* UIColor.swift */; };
 		FD796AEC2904BF5C00AD9059 /* RecetasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796AEB2904BF5C00AD9059 /* RecetasCollectionViewCell.swift */; };
 		FD796AEE2904DAD400AD9059 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796AED2904DAD400AD9059 /* CardView.swift */; };
+		FD796AF02905A43F00AD9059 /* RecetasCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD796AEF2905A43F00AD9059 /* RecetasCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		FD796AE82904B61400AD9059 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		FD796AEB2904BF5C00AD9059 /* RecetasCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetasCollectionViewCell.swift; sourceTree = "<group>"; };
 		FD796AED2904DAD400AD9059 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FD796AEF2905A43F00AD9059 /* RecetasCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecetasCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				FD796AEB2904BF5C00AD9059 /* RecetasCollectionViewCell.swift */,
+				FD796AEF2905A43F00AD9059 /* RecetasCollectionViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			files = (
 				FD796AC42904982100AD9059 /* LaunchScreen.storyboard in Resources */,
 				FD796AD92904B49A00AD9059 /* Home.storyboard in Resources */,
+				FD796AF02905A43F00AD9059 /* RecetasCollectionViewCell.xib in Resources */,
 				FD796AC12904982100AD9059 /* Assets.xcassets in Resources */,
 				FD796AD72904B31100AD9059 /* Search.storyboard in Resources */,
 				FD796ABF2904982000AD9059 /* TabBar.storyboard in Resources */,

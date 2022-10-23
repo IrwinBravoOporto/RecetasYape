@@ -13,7 +13,7 @@ class CardView: UIView {
     @IBInspectable var shadowOffsetWidth: Int = 0
     @IBInspectable var shadowOffsetHeight: Int = 2
     @IBInspectable var shadowColor: UIColor? = #colorLiteral(red: 0.1568627451, green: 0.2, blue: 0.2588235294, alpha: 1)
-    @IBInspectable var shadowOpacity: Float = 0.4
+    @IBInspectable var shadowOpacity: Float = 1
     @IBInspectable var shadowRadius: CGFloat = 5
     @IBInspectable var masksToBounds: Bool = false
     
