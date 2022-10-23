@@ -64,7 +64,7 @@ class LightTabBar: BaseCardTabBar {
     func updateStyle() {
         backgroundColor = .clear
         
-        containerView.backgroundColor = UIColor(hexString: "#272343")
+        containerView.backgroundColor = UIColor(hexString: "#272343")?.withAlphaComponent(0.7)
         containerView.translatesAutoresizingMaskIntoConstraints = false
         containerView.layer.cornerRadius = 12
         containerView.layer.shadowColor = UIColor.lightGray.cgColor
