@@ -35,6 +35,8 @@
 		FD796B072905F16600AD9059 /* FlagPortraitComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796B062905F16600AD9059 /* FlagPortraitComponent.swift */; };
 		FD796B092905F3AB00AD9059 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796B082905F3AB00AD9059 /* Loader.swift */; };
 		FD796B0B2905F3DF00AD9059 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796B0A2905F3DF00AD9059 /* ImageCache.swift */; };
+		FD796B0E2905F7B500AD9059 /* CustomMapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796B0D2905F7B500AD9059 /* CustomMapButton.swift */; };
+		FD796B102905F7BC00AD9059 /* CustomMapButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD796B0F2905F7BC00AD9059 /* CustomMapButton.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		FD796B062905F16600AD9059 /* FlagPortraitComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagPortraitComponent.swift; sourceTree = "<group>"; };
 		FD796B082905F3AB00AD9059 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		FD796B0A2905F3DF00AD9059 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		FD796B0D2905F7B500AD9059 /* CustomMapButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapButton.swift; sourceTree = "<group>"; };
+		FD796B0F2905F7BC00AD9059 /* CustomMapButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomMapButton.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +166,7 @@
 		FD796ADA2904B50B00AD9059 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FD796B0C2905F79800AD9059 /* CustomMapButton */,
 				FD796ADC2904B54C00AD9059 /* TabBarViewController.swift */,
 				FD796ADE2904B56400AD9059 /* CustomBar */,
 			);
@@ -285,6 +290,15 @@
 			path = Component;
 			sourceTree = "<group>";
 		};
+		FD796B0C2905F79800AD9059 /* CustomMapButton */ = {
+			isa = PBXGroup;
+			children = (
+				FD796B0D2905F7B500AD9059 /* CustomMapButton.swift */,
+				FD796B0F2905F7BC00AD9059 /* CustomMapButton.xib */,
+			);
+			path = CustomMapButton;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -344,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD796AC42904982100AD9059 /* LaunchScreen.storyboard in Resources */,
+				FD796B102905F7BC00AD9059 /* CustomMapButton.xib in Resources */,
 				FD796B012905B32A00AD9059 /* Food.storyboard in Resources */,
 				FD796AD92904B49A00AD9059 /* Home.storyboard in Resources */,
 				FD796AF02905A43F00AD9059 /* RecetasCollectionViewCell.xib in Resources */,
@@ -367,6 +382,7 @@
 				FD796AFE2905B30400AD9059 /* FoodDetailViewController.swift in Sources */,
 				FD796AF82905AFD600AD9059 /* HomeVCRouter.swift in Sources */,
 				FD796AEC2904BF5C00AD9059 /* RecetasCollectionViewCell.swift in Sources */,
+				FD796B0E2905F7B500AD9059 /* CustomMapButton.swift in Sources */,
 				FD796ABA2904982000AD9059 /* SceneDelegate.swift in Sources */,
 				FD796B072905F16600AD9059 /* FlagPortraitComponent.swift in Sources */,
 				FD796AFA2905AFE600AD9059 /* HomeVCPresenter.swift in Sources */,
