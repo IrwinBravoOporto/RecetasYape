@@ -15,6 +15,6 @@ protocol HomeVCConfiguratorProtocol {
 class HomeVCConfigurator : HomeVCConfiguratorProtocol{
     func configure(viewController: HomeViewController) {
         let router = HomeVCRouter(withView: viewController)
-        viewController.presenter = HomeVCPresenter(withRouter: router, view: viewController, currentController: viewController)
+        viewController.presenter = HomeVCPresenter(withRouter: router, currentController: viewController)
     }
 }

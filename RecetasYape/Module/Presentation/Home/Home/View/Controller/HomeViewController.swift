@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol HomeViewControllerProtocol {
-    func reloadData()
-}
-
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var collectionViewBorder: UIView! {
@@ -51,20 +47,13 @@ class HomeViewController: UIViewController {
         presenter.viewDidLoad()
     }
     
-//    override func viewWillAppear(_ animated:Bool) {
-//        super.viewWillAppear(animated)
-//        setupNavigation()
-//    }
-//
-//    func setupNavigation(){
-//        self.navigationController?.setNavigationBarHidden(true, animated: true)
-//    }
-}
+    override func viewWillAppear(_ animated:Bool) {
+        super.viewWillAppear(animated)
+        setupNavigation()
+    }
 
-// MARK: - Protocol
-extension HomeViewController: HomeViewControllerProtocol {
-    func reloadData() {
-        collectionView.reloadData()
+    func setupNavigation(){
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
 }
 
@@ -84,7 +73,7 @@ extension HomeViewController : UICollectionViewDataSource {
 // MARK: - CollectionViewDelegate
 extension HomeViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        presenter.detailFood(with: dataFoodList[indexPath.row])
         print(dataFoodList[indexPath.row])
     }
 }

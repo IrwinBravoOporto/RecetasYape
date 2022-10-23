@@ -10,16 +10,15 @@ import UIKit
 
 protocol HomeVCPresenterProtocol {
     func viewDidLoad()
+    func detailFood(with food: Recipe)
 }
 
 class HomeVCPresenter {
-    private var view: HomeViewControllerProtocol?
     private weak var currentController: HomeViewController?
     var router : HomeVCRouterProtocol!
     
-    init(withRouter router: HomeVCRouterProtocol, view: HomeViewControllerProtocol, currentController: HomeViewController ) {
+    init(withRouter router: HomeVCRouterProtocol, currentController: HomeViewController ) {
         self.router = router
-        self.view = view
         self.currentController = currentController
     }
 }
@@ -29,5 +28,9 @@ extension HomeVCPresenter: HomeVCPresenterProtocol {
     func viewDidLoad() {
         guard let viewSelf = currentController else { return }
         viewSelf.dataFoodList = Constants.dataFood.dataRecipe
+    }
+    
+    func detailFood(with food: Recipe) {
+        router.routeDetailFood(with: food)
     }
 }

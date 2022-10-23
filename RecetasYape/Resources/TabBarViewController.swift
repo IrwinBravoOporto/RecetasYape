@@ -38,6 +38,8 @@ class TabBarViewController: UITabBarController {
 
         setupTabBar()
         updateTabBarHeightIfNeeded()
+        NotificationCenter.default.addObserver(self, selector: #selector(tabBarHidden), name: Notification.Name("TabBarHidden"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(showTabBar), name: Notification.Name("ShowTabBar"), object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -86,7 +88,15 @@ class TabBarViewController: UITabBarController {
         anotherSmallViewBottomConstraint?.isActive = true
     }
     
-    func setTabBarHidden(_ isHidden: Bool, animated: Bool){
+    @objc func tabBarHidden(){
+        setTabBarHidden(true, animated: true)
+    }
+    
+    @objc func showTabBar(){
+        setTabBarHidden(false, animated: true)
+    }
+    
+     func setTabBarHidden(_ isHidden: Bool, animated: Bool){
         let block = {
             self.customTabBar.alpha = isHidden ? 0 : 1
             self.additionalSafeAreaInsets = UIEdgeInsets(top: 0, left: 0, bottom: isHidden ? 0 : self.tabBarHeight, right: 0)

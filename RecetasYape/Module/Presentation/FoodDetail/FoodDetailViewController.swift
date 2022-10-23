@@ -13,19 +13,33 @@ class FoodDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(hexString: "#272343")
-        // Do any additional setup after loading the view.
+        setupView()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setupView() {
+        view.backgroundColor = UIColor(hexString: "#272343")
+        NotificationCenter.default.post(name: Notification.Name("TabBarHidden"), object: nil)
+        setupNavigation()
     }
-    */
+    
+}
 
+
+extension FoodDetailViewController {
+    
+    func setupNavigation(){
+        
+        let back = UIBarButtonItem(image: UIImage(named: "img_back")?.withTintColor(.white), style: .plain, target: self, action: #selector(didTapBackButton))
+        title = foodDetail.name
+        self.navigationItem.setLeftBarButton(back, animated: false)
+        self.navigationController?.navigationBar.backgroundColor = UIColor(hexString: "#272343")
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.view.backgroundColor = .clear
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    @objc func didTapBackButton(){
+        self.navigationController?.popViewController(animated: true)
+        NotificationCenter.default.post(name: Notification.Name("ShowTabBar"), object: nil)
+    }
 }
