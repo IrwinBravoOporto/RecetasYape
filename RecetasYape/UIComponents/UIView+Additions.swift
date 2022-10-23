@@ -75,6 +75,7 @@ extension UIStackView {
 }
 
 extension UIView {
+        
     func subviewsPreparedAL(@SubviewsBuilder content: () -> [UIView]){
         for view in content() {
             addSubview(view)

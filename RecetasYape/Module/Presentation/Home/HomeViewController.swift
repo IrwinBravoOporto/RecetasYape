@@ -26,13 +26,14 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.dataSource = self
         let myLayer = CALayer()
         let myImage = UIImage(named: "Yape")?.cgImage
         myLayer.frame = CGRect(x: 0, y: 0, width: 430, height: 250)
         myLayer.contents = myImage
         imgTopView.layer.insertSublayer(myLayer, at: 0)
-//        collectionView.delegate = self
+        collectionView.delegate = self
+        collectionView.dataSource = self
+
      }
     
     override func viewWillAppear(_ animated:Bool) {
@@ -54,10 +55,16 @@ extension HomeViewController : UICollectionViewDataSource {
         return recipeList.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecetasCollectionViewCell", for: indexPath) as! RecetasCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecetasCollectionViewCell.viewId, for: indexPath) as! RecetasCollectionViewCell
         
         cell.setup(with: recipeList[indexPath.row])
         
         return cell
+    }
+}
+
+extension HomeViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(recipeList[indexPath.row])
     }
 }
