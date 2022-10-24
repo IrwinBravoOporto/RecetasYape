@@ -75,10 +75,17 @@ class FoodDetailViewController: UIViewController {
             }
         }
     }
+    
+    var presenter: FoodDetailVCPresenterProtocol!
+    let configurator = FoodDetailVCConfigurator()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+    }
+    
+    @IBAction func didTapViewMapOrigin(_ sender: Any) {
+        presenter.goToMapView(with: foodDetail)
     }
 }
 
@@ -89,6 +96,7 @@ extension FoodDetailViewController {
         view.backgroundColor = UIColor(hexString: "#272343")
         NotificationCenter.default.post(name: Notification.Name("TabBarHidden"), object: nil)
         setupNavigation()
+        configurator.configure(viewController: self)
     }
     
     func setupNavigation(){

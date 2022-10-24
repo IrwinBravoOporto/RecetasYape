@@ -17,6 +17,8 @@ struct Recipe: Identifiable {
     var country: String? = "Desconocido"
     var city: String? = ""
     var flag: String? = ""
+    var latitude: Double = 0.0
+    var longitude: Double = 0.0
 }
 
 

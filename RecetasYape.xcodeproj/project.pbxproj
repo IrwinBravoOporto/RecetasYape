@@ -37,6 +37,11 @@
 		FD796B0B2905F3DF00AD9059 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796B0A2905F3DF00AD9059 /* ImageCache.swift */; };
 		FD796B0E2905F7B500AD9059 /* CustomMapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796B0D2905F7B500AD9059 /* CustomMapButton.swift */; };
 		FD796B102905F7BC00AD9059 /* CustomMapButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD796B0F2905F7BC00AD9059 /* CustomMapButton.xib */; };
+		FD796B1729060A7800AD9059 /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796B1629060A7800AD9059 /* MapKitViewController.swift */; };
+		FD796B1929060A8800AD9059 /* MapKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD796B1829060A8800AD9059 /* MapKit.storyboard */; };
+		FD796B2029060BF900AD9059 /* FoodDetailVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796B1F29060BF900AD9059 /* FoodDetailVCRouter.swift */; };
+		FD796B2229060C0000AD9059 /* FoodDetailVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796B2129060C0000AD9059 /* FoodDetailVCPresenter.swift */; };
+		FD796B2429060C0800AD9059 /* FoodDetailVCConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796B2329060C0800AD9059 /* FoodDetailVCConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +77,11 @@
 		FD796B0A2905F3DF00AD9059 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		FD796B0D2905F7B500AD9059 /* CustomMapButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapButton.swift; sourceTree = "<group>"; };
 		FD796B0F2905F7BC00AD9059 /* CustomMapButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomMapButton.xib; sourceTree = "<group>"; };
+		FD796B1629060A7800AD9059 /* MapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
+		FD796B1829060A8800AD9059 /* MapKit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapKit.storyboard; sourceTree = "<group>"; };
+		FD796B1F29060BF900AD9059 /* FoodDetailVCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailVCRouter.swift; sourceTree = "<group>"; };
+		FD796B2129060C0000AD9059 /* FoodDetailVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailVCPresenter.swift; sourceTree = "<group>"; };
+		FD796B2329060C0800AD9059 /* FoodDetailVCConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailVCConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +169,7 @@
 				FD796AD62904B31100AD9059 /* Search.storyboard */,
 				FD796AD82904B49A00AD9059 /* Home.storyboard */,
 				FD796B002905B32A00AD9059 /* Food.storyboard */,
+				FD796B1829060A8800AD9059 /* MapKit.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,6 +187,7 @@
 		FD796ADB2904B51B00AD9059 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FD796B1529060A6B00AD9059 /* MapKit */,
 				FD796AD22904B2A100AD9059 /* Search */,
 				FD796AD12904B29C00AD9059 /* Home */,
 				FD796AFF2905B30B00AD9059 /* FoodDetail */,
@@ -267,7 +279,9 @@
 		FD796AFF2905B30B00AD9059 /* FoodDetail */ = {
 			isa = PBXGroup;
 			children = (
-				FD796AFD2905B30400AD9059 /* FoodDetailViewController.swift */,
+				FD796B1E29060BE900AD9059 /* Router */,
+				FD796B1D29060BE400AD9059 /* Presenter */,
+				FD796B1C29060BDF00AD9059 /* View */,
 			);
 			path = FoodDetail;
 			sourceTree = "<group>";
@@ -297,6 +311,55 @@
 				FD796B0F2905F7BC00AD9059 /* CustomMapButton.xib */,
 			);
 			path = CustomMapButton;
+			sourceTree = "<group>";
+		};
+		FD796B1529060A6B00AD9059 /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				FD796B1629060A7800AD9059 /* MapKitViewController.swift */,
+			);
+			path = MapKit;
+			sourceTree = "<group>";
+		};
+		FD796B1A29060BCB00AD9059 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FD796AFD2905B30400AD9059 /* FoodDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FD796B1B29060BD000AD9059 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				FD796B2329060C0800AD9059 /* FoodDetailVCConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		FD796B1C29060BDF00AD9059 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD796B1B29060BD000AD9059 /* Configurator */,
+				FD796B1A29060BCB00AD9059 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FD796B1D29060BE400AD9059 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FD796B2129060C0000AD9059 /* FoodDetailVCPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FD796B1E29060BE900AD9059 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FD796B1F29060BF900AD9059 /* FoodDetailVCRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,6 +427,7 @@
 				FD796AF02905A43F00AD9059 /* RecetasCollectionViewCell.xib in Resources */,
 				FD796AC12904982100AD9059 /* Assets.xcassets in Resources */,
 				FD796AD72904B31100AD9059 /* Search.storyboard in Resources */,
+				FD796B1929060A8800AD9059 /* MapKit.storyboard in Resources */,
 				FD796ABF2904982000AD9059 /* TabBar.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,15 +439,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD796B2429060C0800AD9059 /* FoodDetailVCConfigurator.swift in Sources */,
 				FD796AE72904B5CE00AD9059 /* UIView+Additions.swift in Sources */,
 				FD796AE92904B61400AD9059 /* UIColor.swift in Sources */,
 				FD796AD42904B2AD00AD9059 /* SearchViewController.swift in Sources */,
 				FD796AB82904982000AD9059 /* AppDelegate.swift in Sources */,
+				FD796B2029060BF900AD9059 /* FoodDetailVCRouter.swift in Sources */,
 				FD796AFE2905B30400AD9059 /* FoodDetailViewController.swift in Sources */,
 				FD796AF82905AFD600AD9059 /* HomeVCRouter.swift in Sources */,
+				FD796B1729060A7800AD9059 /* MapKitViewController.swift in Sources */,
 				FD796AEC2904BF5C00AD9059 /* RecetasCollectionViewCell.swift in Sources */,
 				FD796B0E2905F7B500AD9059 /* CustomMapButton.swift in Sources */,
 				FD796ABA2904982000AD9059 /* SceneDelegate.swift in Sources */,
+				FD796B2229060C0000AD9059 /* FoodDetailVCPresenter.swift in Sources */,
 				FD796B072905F16600AD9059 /* FlagPortraitComponent.swift in Sources */,
 				FD796AFA2905AFE600AD9059 /* HomeVCPresenter.swift in Sources */,
 				FD796AFC2905AFF500AD9059 /* HomeVCConfigurator.swift in Sources */,

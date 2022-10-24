@@ -89,10 +89,12 @@ class TabBarViewController: UITabBarController {
     }
     
     @objc func tabBarHidden(){
+        self.tabBar.isHidden = true
         setTabBarHidden(true, animated: true)
     }
     
     @objc func showTabBar(){
+        self.tabBar.isHidden = true
         setTabBarHidden(false, animated: true)
     }
     
