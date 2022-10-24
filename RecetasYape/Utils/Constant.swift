@@ -9,7 +9,7 @@ import Foundation
 
 class Constants {
     struct dataFood {
-        static let loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien sem, commodo ac metus sed, dignissim cursus neque. Phasellus rutrum eros."
+        static let loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien sem, commodo."
         
         static let dataRecipe = [
             Recipe(name: "Ceviche", category: "Plato", ingredients: ["- 1 pizca de pimienta", "\n- 1 kilo de pescado", "\n- 12 limones", "\n- 1 pizca de sal y pimienta", "\n- 1 taza de caldo de pescado", "\n- 1 cebolla", "\n- 1 aji amarillo picado","\n- aji limo", "\n- 1 camote"], description: loremIpsum, imagen: "ceviche_peruano", country: "Peru", city: "Lima", flag: "pe",latitude: -12.0725923,longitude: -77.0551006),
