@@ -14,12 +14,16 @@ class FoodDetailViewController: UIViewController {
     @IBOutlet weak var imgTopView: UIImageView!{
         didSet {
             imgTopView.image = UIImage(named: foodDetail.imagen ?? "Yape")
+            imgTopView.layer.cornerRadius = 10
+            imgTopView.borderColor = .white
+            imgTopView.borderWidth = 1
         }
     }
     
-    @IBOutlet weak var collectionViewBorder: UIView! {
+    @IBOutlet weak var collectionViewBorder: CardView! {
         didSet {
-            self.collectionViewBorder.roundCorners([.topRight], radius: 40)
+            collectionViewBorder.cornerRadius = 20
+            collectionViewBorder.shadowColor = .gray
         }
     }
     
