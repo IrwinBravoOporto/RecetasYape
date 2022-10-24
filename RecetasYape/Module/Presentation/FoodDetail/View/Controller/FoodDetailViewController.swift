@@ -33,7 +33,7 @@ class FoodDetailViewController: UIViewController {
             lblOrigin.text = "\(foodDetail.country ?? String()), \(foodDetail.city ?? String())"
         }
     }
-    @IBOutlet weak var ingredientsTextView: UITextView! {
+    @IBOutlet weak var ingredientsTextView: UILabel! {
         didSet {
             
             guard let  array = foodDetail.ingredients else {return}
@@ -51,7 +51,7 @@ class FoodDetailViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var preparationTextView: UITextView! {
+    @IBOutlet weak var preparationTextView: UILabel! {
         didSet {
             preparationTextView.text = foodDetail.description
             preparationTextView.textColor = .white
