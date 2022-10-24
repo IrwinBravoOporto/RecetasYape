@@ -16,10 +16,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNP-P0-3ey">
-                                <rect key="frame" x="0.0" y="0.0" width="436" height="224"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="224"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recetas Peruanas" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZq-tu-Wd9">
-                                        <rect key="frame" x="15" y="50" width="261" height="36"/>
+                                        <rect key="frame" x="15" y="50" width="239" height="72"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -52,7 +52,6 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="7BR-FZ-ZOB" secondAttribute="trailing" constant="15" id="2Nl-Kd-81H"/>
                                     <constraint firstItem="7BR-FZ-ZOB" firstAttribute="top" secondItem="Un3-KG-we2" secondAttribute="top" constant="15" id="YVS-im-4Lf"/>
-                                    <constraint firstAttribute="width" constant="430" id="ZpU-rB-W0N"/>
                                     <constraint firstAttribute="bottom" secondItem="7BR-FZ-ZOB" secondAttribute="bottom" id="a4A-mR-PDb"/>
                                     <constraint firstItem="7BR-FZ-ZOB" firstAttribute="leading" secondItem="Un3-KG-we2" secondAttribute="leading" constant="5" id="aDN-fA-qWP"/>
                                 </constraints>
@@ -65,9 +64,9 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Un3-KG-we2" secondAttribute="bottom" constant="-150" id="DVD-uU-Dw5"/>
                             <constraint firstItem="WNP-P0-3ey" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="SGp-8i-ApJ"/>
                             <constraint firstItem="WNP-P0-3ey" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="YKQ-F4-5x3"/>
-                            <constraint firstItem="Un3-KG-we2" firstAttribute="trailing" secondItem="5EZ-qb-Rvc" secondAttribute="trailing" id="e8Y-66-e3U"/>
                             <constraint firstItem="Un3-KG-we2" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="fWO-2H-MIQ"/>
                             <constraint firstItem="WNP-P0-3ey" firstAttribute="trailing" secondItem="5EZ-qb-Rvc" secondAttribute="trailing" id="mag-63-QAQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Un3-KG-we2" secondAttribute="trailing" id="ql4-aF-DBa"/>
                         </constraints>
                     </view>
                     <connections>

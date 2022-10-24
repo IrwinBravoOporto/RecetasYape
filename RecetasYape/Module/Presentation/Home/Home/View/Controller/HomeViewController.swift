@@ -11,7 +11,8 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var collectionViewBorder: UIView! {
         didSet {
-            self.collectionViewBorder.roundCorners([.topRight], radius: 40)
+            self.collectionViewBorder.roundCorners([.topRight], radius: 50
+            )
         }
     }
     @IBOutlet weak var collectionView: UICollectionView!{
@@ -26,7 +27,7 @@ class HomeViewController: UIViewController {
         didSet {
             let myLayer = CALayer()
             let myImage = UIImage(named: "Yape")?.cgImage
-            myLayer.frame = CGRect(x: 0, y: 0, width: 430, height: 250)
+            myLayer.frame = CGRect(x: 0, y: 0, width: 430, height: 330)
             myLayer.contents = myImage
             imgTopView.layer.insertSublayer(myLayer, at: 0)
         }
