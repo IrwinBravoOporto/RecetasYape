@@ -177,7 +177,7 @@
 			children = (
 				FD796B052905F15400AD9059 /* Component */,
 				FD796B022905BE7400AD9059 /* Utils */,
-				FD796AE52904B5C200AD9059 /* UIComponents */,
+				FD796AE52904B5C200AD9059 /* CustomButton */,
 				FD796ADA2904B50B00AD9059 /* Resources */,
 				FD796ACE2904B27700AD9059 /* Module */,
 				FD796AD52904B30500AD9059 /* Views */,
@@ -193,6 +193,7 @@
 		FD796ACD2904985700AD9059 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FD796B062905F16600AD9059 /* FlagPortraitComponent.swift */,
 				FD796ACB2904985100AD9059 /* RecipeModel.swift */,
 			);
 			path = Model;
@@ -267,12 +268,12 @@
 			path = CustomBar;
 			sourceTree = "<group>";
 		};
-		FD796AE52904B5C200AD9059 /* UIComponents */ = {
+		FD796AE52904B5C200AD9059 /* CustomButton */ = {
 			isa = PBXGroup;
 			children = (
 				FD796B0C2905F79800AD9059 /* CustomMapButton */,
 			);
-			path = UIComponents;
+			path = CustomButton;
 			sourceTree = "<group>";
 		};
 		FD796AEA2904BF4000AD9059 /* Cell */ = {
@@ -352,7 +353,6 @@
 				FD796B032905BE8500AD9059 /* Constant.swift */,
 				FD796AE62904B5CE00AD9059 /* UIView+Additions.swift */,
 				FD796AE82904B61400AD9059 /* UIColor.swift */,
-				FD796AED2904DAD400AD9059 /* CardView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -360,9 +360,9 @@
 		FD796B052905F15400AD9059 /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				FD796B062905F16600AD9059 /* FlagPortraitComponent.swift */,
 				FD796B082905F3AB00AD9059 /* Loader.swift */,
 				FD796B0A2905F3DF00AD9059 /* ImageCache.swift */,
+				FD796AED2904DAD400AD9059 /* CardView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
