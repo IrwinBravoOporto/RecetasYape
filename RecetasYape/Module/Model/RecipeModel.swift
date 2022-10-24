@@ -7,18 +7,17 @@
 
 import Foundation
 
-struct Recipe: Identifiable {
-    var id = UUID()
+struct Recipe {
     var name:  String?
-    var category: String? = "Sin categoría"
+    var category: String?
     var ingredients: [String]?
-    var description: String? = "Sin descripción"
+    var description: String?
     var imagen: String?
-    var country: String? = "Desconocido"
-    var city: String? = ""
-    var flag: String? = ""
-    var latitude: Double = 0.0
-    var longitude: Double = 0.0
+    var country: String?
+    var city: String?
+    var flag: String?
+    var latitude: Double?
+    var longitude: Double?
 }
 
 

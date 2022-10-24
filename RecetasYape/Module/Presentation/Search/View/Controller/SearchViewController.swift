@@ -86,6 +86,7 @@ extension SearchViewController: UISearchBarDelegate {
                 let str = "\($0.name ?? String())"
                 if let range: Range<String.Index> = str.range(of: "\(searchText)") {
                     let index: Int = str.distance(from: str.startIndex, to: range.lowerBound)
+                    print(index)
                     value = true
                 }
                 else {
