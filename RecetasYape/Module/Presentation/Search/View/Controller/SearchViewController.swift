@@ -24,6 +24,7 @@ class SearchViewController: UIViewController {
         setupTablewView()
         setupSearchView()
         presenter.loadData()
+        initBaseView()
     }
     
     override func viewWillAppear(_ animated:Bool) {
@@ -46,6 +47,16 @@ class SearchViewController: UIViewController {
         tableViewFoodList.register(UINib(nibName: FoodListCell.viewId, bundle: .main), forCellReuseIdentifier: FoodListCell.viewId)
         tableViewFoodList.separatorInset = .zero
         tableViewFoodList.separatorColor = .clear
+    }
+    
+    func initBaseView(){
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SearchViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard(){
+        view.endEditing(true)
     }
 }
 
