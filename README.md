@@ -1,10 +1,6 @@
 # RecetasYape
 Recetas - VIPER
 
-## Stubbing Network Requests for Unit Tests
-
-Generally, it is not a good idea to rely on the actual network requests for unit tests because it adds too much dependency on tests. One way to stub networking is to subclass `URLProtocol`.
-
 ### 1. Arquitectura `VIPER`
  Se tiene la el patron de Arquitectura VIPER, y para tal reto se uso la configuracion siguiente -> Router - Presenter - Configurator - Controller - View 
 
