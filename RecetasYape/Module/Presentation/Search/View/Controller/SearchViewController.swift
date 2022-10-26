@@ -25,6 +25,7 @@ class SearchViewController: UIViewController {
         setupSearchView()
         presenter.loadData()
         initBaseView()
+        
     }
     
     override func viewWillAppear(_ animated:Bool) {
@@ -47,6 +48,21 @@ class SearchViewController: UIViewController {
         tableViewFoodList.register(UINib(nibName: FoodListCell.viewId, bundle: .main), forCellReuseIdentifier: FoodListCell.viewId)
         tableViewFoodList.separatorInset = .zero
         tableViewFoodList.separatorColor = .clear
+//        tableViewFoodList.tableHeaderView = headerOfBoards()
+    }
+    
+    private func headerView() -> UIView {
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 150))
+        headerView.backgroundColor = .clear
+        
+        let label = UILabel(frame: CGRect(x: view.frame.size.width/4, y: 0, width: 200, height: headerView.frame.size.height))
+        label.text = "No recipe found with that name"
+        label.textAlignment = .center
+        label.font = .systemFont(ofSize: 20)
+        label.numberOfLines = 0
+        label.textColor = .white
+        headerView.addSubview(label)
+        return headerView
     }
     
     func initBaseView(){
@@ -87,6 +103,7 @@ extension SearchViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if (searchText == String()) {
             presenter.loadData()
+            tableViewFoodList.tableHeaderView = nil
             tableViewFoodList.reloadData()
         } else {
             listFoodFilter?.removeAll()
@@ -102,10 +119,10 @@ extension SearchViewController: UISearchBarDelegate {
                 }
                 else {
                     value = false
-                    print("substring not found")
                 }
                 return value
             }
+            tableViewFoodList.tableHeaderView = (arrayFilter?.count ?? Int() > 0) ? nil : headerView()
             listFoodFilter = arrayFilter
             tableViewFoodList.reloadData()
         }
