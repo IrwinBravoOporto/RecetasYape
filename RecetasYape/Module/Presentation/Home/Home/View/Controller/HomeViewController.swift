@@ -37,6 +37,8 @@ class HomeViewController: UIViewController {
     var presenter: HomeVCPresenterProtocol!
     let configurator = HomeVCConfigurator()
     
+    private var valueTest = false
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,7 +62,7 @@ class HomeViewController: UIViewController {
 
 // MARK: - CollectionViewDataSource
 extension HomeViewController : UICollectionViewDataSource {
-     
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataFoodList.count
     }
@@ -76,5 +78,19 @@ extension HomeViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         presenter.detailFood(with: dataFoodList[indexPath.row])
         print(dataFoodList[indexPath.row])
+    }
+}
+
+// MARK: - Unit Test
+extension HomeViewController {
+    
+    func getCountListFood(newNalue : Int) -> Bool {
+        let value = Constants.dataFood.dataRecipe.count
+        valueTest = value == newNalue ? true : false
+        return valueTest
+    }
+    
+    func testUnitNumber(a: Int, b: Int) -> Int {
+        return a + b
     }
 }

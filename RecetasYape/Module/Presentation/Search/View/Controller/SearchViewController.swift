@@ -17,6 +17,10 @@ class SearchViewController: UIViewController {
     let configurator = SearchVCConfigurator()
     
     var listFoodFilter: [Recipe]?
+    
+    
+    private var valueTest = false
+   
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +52,6 @@ class SearchViewController: UIViewController {
         tableViewFoodList.register(UINib(nibName: FoodListCell.viewId, bundle: .main), forCellReuseIdentifier: FoodListCell.viewId)
         tableViewFoodList.separatorInset = .zero
         tableViewFoodList.separatorColor = .clear
-//        tableViewFoodList.tableHeaderView = headerOfBoards()
     }
     
     private func headerView() -> UIView {
@@ -128,3 +131,18 @@ extension SearchViewController: UISearchBarDelegate {
         }
     }
 }
+
+// MARK: - Unit Test
+extension SearchViewController {
+
+    func getCountListFood(newNalue : Int) -> Bool {
+        let value = Constants.dataFood.dataRecipe.count
+        valueTest = value == newNalue ? true : false
+        return valueTest
+    }
+    
+    func testUnitNumber(a: Int, b: Int) -> Int {
+        return a + b
+    }
+}
+
