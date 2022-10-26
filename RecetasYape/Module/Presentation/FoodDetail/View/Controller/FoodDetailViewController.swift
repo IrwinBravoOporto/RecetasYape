@@ -119,3 +119,11 @@ extension FoodDetailViewController {
         NotificationCenter.default.post(name: Notification.Name("ShowTabBar"), object: nil)
     }
 }
+
+// MARK: - Unit Test
+extension FoodDetailViewController {
+    
+    func testUnitNumber(a: Int, b: Int) -> Int {
+        return a + b
+    }
+}

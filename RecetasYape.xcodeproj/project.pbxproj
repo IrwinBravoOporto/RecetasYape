@@ -49,6 +49,8 @@
 		FD796B2429060C0800AD9059 /* FoodDetailVCConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796B2329060C0800AD9059 /* FoodDetailVCConfigurator.swift */; };
 		FD7AF4082909AAF800F74C8F /* SearchViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7AF4072909AAF800F74C8F /* SearchViewTests.swift */; };
 		FD7AF40A2909D9DC00F74C8F /* HomeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7AF4092909D9DC00F74C8F /* HomeViewTests.swift */; };
+		FD7AF40C2909DC3A00F74C8F /* FoodDetailViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7AF40B2909DC3A00F74C8F /* FoodDetailViewTests.swift */; };
+		FD7AF40E2909DDCD00F74C8F /* MapKitViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7AF40D2909DDCD00F74C8F /* MapKitViewTest.swift */; };
 		FDDAE0962908C2EC00A81904 /* RecetasYapeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDAE0952908C2EC00A81904 /* RecetasYapeUITests.swift */; };
 		FDDAE0982908C2EC00A81904 /* RecetasYapeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDAE0972908C2EC00A81904 /* RecetasYapeUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
@@ -116,6 +118,8 @@
 		FD7AF3FE2909A99000F74C8F /* RecetasYapeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecetasYapeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD7AF4072909AAF800F74C8F /* SearchViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewTests.swift; sourceTree = "<group>"; };
 		FD7AF4092909D9DC00F74C8F /* HomeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTests.swift; sourceTree = "<group>"; };
+		FD7AF40B2909DC3A00F74C8F /* FoodDetailViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailViewTests.swift; sourceTree = "<group>"; };
+		FD7AF40D2909DDCD00F74C8F /* MapKitViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewTest.swift; sourceTree = "<group>"; };
 		FDDAE0932908C2EC00A81904 /* RecetasYapeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecetasYapeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDAE0952908C2EC00A81904 /* RecetasYapeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetasYapeUITests.swift; sourceTree = "<group>"; };
 		FDDAE0972908C2EC00A81904 /* RecetasYapeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetasYapeUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -475,6 +479,8 @@
 			children = (
 				FD7AF4072909AAF800F74C8F /* SearchViewTests.swift */,
 				FD7AF4092909D9DC00F74C8F /* HomeViewTests.swift */,
+				FD7AF40B2909DC3A00F74C8F /* FoodDetailViewTests.swift */,
+				FD7AF40D2909DDCD00F74C8F /* MapKitViewTest.swift */,
 			);
 			path = RecetasYapeTests;
 			sourceTree = "<group>";
@@ -664,6 +670,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD7AF40E2909DDCD00F74C8F /* MapKitViewTest.swift in Sources */,
+				FD7AF40C2909DC3A00F74C8F /* FoodDetailViewTests.swift in Sources */,
 				FD7AF4082909AAF800F74C8F /* SearchViewTests.swift in Sources */,
 				FD7AF40A2909D9DC00F74C8F /* HomeViewTests.swift in Sources */,
 			);

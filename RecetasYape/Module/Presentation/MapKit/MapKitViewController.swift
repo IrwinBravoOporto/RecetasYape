@@ -56,3 +56,11 @@ extension MapKitViewController {
         self.navigationController?.popViewController(animated: true)
     }
 }
+
+// MARK: - Unit Test
+extension MapKitViewController {
+    
+    func testUnitNumber(a: Int, b: Int) -> Int {
+        return a + b
+    }
+}
